@@ -22,8 +22,6 @@ Mario.LevelState.prototype.Enter = function() {
     var levelGenerator = new Mario.LevelGenerator(320, 15), i = 0, scrollSpeed = 0, w = 0, h = 0, bgLevelGenerator = null;
     this.Level = levelGenerator.CreateLevel();
 
-    Mario.PlayOvergroundMusic();
-
     this.Layer = new Mario.LevelRenderer(this.Level, 320, 240);
     this.Sprites = new Enjine.DrawableManager();
     this.Camera = new Enjine.Camera();
