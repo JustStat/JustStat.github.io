@@ -63,7 +63,7 @@ Mario.LevelState.prototype.Update = function(delta) {
     this.Delta = delta;
 
     if (!Mario.MarioCharacter.isFirstMove) {
-        this.Camera.X += 2;
+        this.Camera.X += 4;
     }
 
     if (this.Camera.X < 0) {
